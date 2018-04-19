@@ -14,7 +14,7 @@ namespace StatisticalUpdate.Controllers
         }
         public ActionResult Login()
         {
-            return View();
+            return View(); 
         }
         public ActionResult AddDistrict()
         {
