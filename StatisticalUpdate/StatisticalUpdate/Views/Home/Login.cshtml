@@ -1,0 +1,40 @@
+﻿@model StatisticalUpdate.Models.FprmModels.LoginForm
+@{
+    ViewBag.Title = "Login to SRSP Statistical Update Solution";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("CheckLogin","Home"))
+{
+    <div class="form-group">
+        <div class="form-control">
+            @Html.DisplayFor(m => m.username)
+        </div>
+        <div class="form-control">
+            @Html.TextBoxFor(m => m.username)
+        </div>
+        
+    </div>
+    <div class="form-group">
+        <div class="form-control">
+
+            @Html.DisplayFor(m => m.pwd)
+</div>
+            <div class="form-control">
+                @Html.PasswordFor(m => m.pwd)
+            </div>
+
+        </div>
+    
+    <div class="form-group">
+        <input type="submit" />
+    </div>
+    
+
+}
+
+
+
+
+
+

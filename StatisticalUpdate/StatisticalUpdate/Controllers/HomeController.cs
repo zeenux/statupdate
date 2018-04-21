@@ -16,6 +16,10 @@ namespace StatisticalUpdate.Controllers
         {
             return View(); 
         }
+        public void CheckLogin()
+        {
+            Response.Write("Hello World");
+        }
         public ActionResult AddDistrict()
         {
             return View();

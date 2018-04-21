@@ -14,5 +14,7 @@ namespace StatisticalUpdate.Models
         public int id { get; set; }
         public String DistrictName { get; set; }
         public virtual ICollection<SM> SMs { get; set; }
+
+        public virtual ICollection<Users> users { get; set; }
     }
 }
