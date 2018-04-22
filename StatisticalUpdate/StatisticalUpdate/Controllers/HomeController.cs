@@ -16,6 +16,13 @@ namespace StatisticalUpdate.Controllers
         {
             return View(); 
         }
+        
+        public void CheckLogin(StatisticalUpdate.Models.ViewModels.LoginView lv)
+        {
+
+            Response.Write(lv.Username);
+            Response.Write("=====" + lv.Pass);
+        }
         public ActionResult AddDistrict()
         {
             return View();
@@ -38,14 +45,14 @@ namespace StatisticalUpdate.Controllers
         
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "SRSP Statistical Update Solution";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Visit SRSP Website at http://www.srsp.org.pk";
 
             return View();
         }

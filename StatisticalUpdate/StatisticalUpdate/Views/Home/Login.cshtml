@@ -1,0 +1,22 @@
+﻿@model StatisticalUpdate.Models.ViewModels.LoginView
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login to Statistical Collection System</h2>
+
+@using (Html.BeginForm("CheckLogin","Home"))
+{
+    <div class="form-group">
+        @Html.DisplayFor(m=>m.Username)
+        @Html.TextBoxFor(m=>m.Username, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.DisplayFor(m=>m.Pass)
+        @Html.PasswordFor(m=>m.Pass, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" />
+    </div>
+}
