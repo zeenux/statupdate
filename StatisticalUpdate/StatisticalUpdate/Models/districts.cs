@@ -10,6 +10,7 @@ namespace StatisticalUpdate.Models
         public Districts()
         {
             this.SMs = new HashSet<SM>();
+            this.users = new HashSet<Users>();
         }
         public int id { get; set; }
         public String DistrictName { get; set; }

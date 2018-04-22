@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using StatisticalUpdate.Models;
 namespace StatisticalUpdate.Controllers
 {
     public class HomeController : Controller
@@ -11,6 +11,12 @@ namespace StatisticalUpdate.Controllers
         ER db = new ER();
         public ActionResult Index()
         {
+            //Districts d = new Districts { DistrictName = "Peshawar" };
+            //db.districtList.Add(d);
+            
+            //Users u = new Users { Username = "zeenux", Pwd = "NONE123", DistrictID=1 };
+            //db.User.Add(u);
+            //db.SaveChanges();
             return RedirectToAction("Login");//  View();
         }
         public ActionResult Login()
@@ -33,6 +39,10 @@ namespace StatisticalUpdate.Controllers
             
         }
         public ActionResult AddDistrict()
+        {
+            return View();
+        }
+        public ActionResult ListDistricts()
         {
             return View();
         }
