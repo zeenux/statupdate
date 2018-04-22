@@ -137,6 +137,7 @@
     </Compile>
     <Compile Include="Models\Districts.cs" />
     <Compile Include="Models\SM.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Models\ViewModels\LoginView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

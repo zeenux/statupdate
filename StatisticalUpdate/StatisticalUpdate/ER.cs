@@ -24,6 +24,7 @@ namespace StatisticalUpdate
 
         public virtual DbSet<Districts> districtList { get; set; }
         public virtual DbSet<SM> socialMob { get; set; }
+        public virtual DbSet<Users> User { get; set; }
     }
 
     //public class MyEntity

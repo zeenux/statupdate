@@ -16,5 +16,6 @@ namespace StatisticalUpdate.Models
         public virtual ICollection<SM> SMs { get; set; }
 
         public virtual ICollection<Users> users { get; set; }
+        
     }
 }

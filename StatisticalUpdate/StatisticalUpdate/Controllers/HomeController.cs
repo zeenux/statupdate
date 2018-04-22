@@ -8,6 +8,7 @@ namespace StatisticalUpdate.Controllers
 {
     public class HomeController : Controller
     {
+        ER db = new ER();
         public ActionResult Index()
         {
             return RedirectToAction("Login");//  View();
@@ -19,9 +20,17 @@ namespace StatisticalUpdate.Controllers
         
         public void CheckLogin(StatisticalUpdate.Models.ViewModels.LoginView lv)
         {
-
-            Response.Write(lv.Username);
-            Response.Write("=====" + lv.Pass);
+            var rst = db.User.Select((i) => i.Username == lv.Username && i.Pwd == lv.Pass);
+            if(rst.Count()>0)
+            {
+                Response.Write("Found user");
+            }
+            else
+            {
+                Response.Write("Not Found");
+            }
+            
+            
         }
         public ActionResult AddDistrict()
         {
