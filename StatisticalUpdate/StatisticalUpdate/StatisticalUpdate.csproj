@@ -139,9 +139,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Cbo.cs" />
     <Compile Include="Models\Districts.cs" />
     <Compile Include="Models\SM.cs" />
+    <Compile Include="Models\SMStatistics.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Models\ViewModels\LoginView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
